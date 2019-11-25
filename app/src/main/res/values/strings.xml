@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="Users">Users</string>
+    <string name="UserTransaction">UserTransaction</string>
+    <string name="user_id">user_id</string>
+    <string name="email">email@</string>
+    <string name="password">password</string>
+    <string name="first_name">first_name</string>
+    <string name="last_name">last_name</string>
+    <string name="address">adress</string>
+    <string name="performance_factor">performance_factor</string>
+    <string name="cellphone">cellphone</string>
+    <string name="payment_id">payment_id</string>
+    <string name="agregar">agregar</string>
+    <string name="eliminar">eliminar</string>
+    <string name="actualizar">actualizar</string>
+    <string name="consultar">consultar</string>
+
+
+</resources>
