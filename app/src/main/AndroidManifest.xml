@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListViewUsers"></activity>
+        <activity android:name=".activityUserTransaction"></activity>
+        <activity android:name=".ListViewUsers" />
         <activity android:name=".activityUsers" />
         <activity android:name=".activityMenu" />
         <activity android:name=".MainActivity">

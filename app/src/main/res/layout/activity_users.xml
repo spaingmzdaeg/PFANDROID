@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".activityUsers">
 
+    <Button
+        android:id="@+id/btnAgregar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="ingresarListView"
+        android:text="@string/mostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/mostrar" />
+
     <EditText
         android:id="@+id/ptuser_id"
         android:layout_width="92dp"
@@ -22,7 +34,7 @@
     <EditText
         android:id="@+id/ptpayment_id"
         android:layout_width="92dp"
-        android:layout_height="40dp"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:ems="10"
@@ -99,14 +111,14 @@
 
     <EditText
         android:id="@+id/ptcellphone"
-        android:layout_width="92dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="204dp"
         android:layout_marginTop="396dp"
-        android:layout_marginEnd="184dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/cellphone"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/cellphone" />
 
@@ -114,7 +126,7 @@
         android:id="@+id/btnAgregar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="48dp"
         android:text="@string/agregar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,8 +137,8 @@
         android:id="@+id/btnconsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="44dp"
         android:text="@string/consultar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -136,8 +148,8 @@
         android:id="@+id/btneliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="52dp"
         android:text="@string/eliminar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -147,8 +159,8 @@
         android:id="@+id/btnactualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="44dp"
         android:text="@string/actualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -166,4 +178,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ptuser_id"
         tools:text="@string/password" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
