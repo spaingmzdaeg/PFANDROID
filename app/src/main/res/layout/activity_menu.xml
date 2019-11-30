@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
+        android:onClick="ingresarUserTransaction"
         android:text="@string/UserTransaction"
         app:layout_constraintStart_toStartOf="@+id/btnusers"
         app:layout_constraintTop_toBottomOf="@+id/btnusers"

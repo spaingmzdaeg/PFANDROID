@@ -20,4 +20,12 @@ public class activityMenu extends AppCompatActivity {
         startActivity(ingresarUsers);
 
     }
+
+    public void ingresarUserTransaction(View view){
+
+        Intent ingresarUserTransaction = new Intent(this,activityUserTransaction.class);
+        startActivity(ingresarUserTransaction);
+
+    }
+
 }

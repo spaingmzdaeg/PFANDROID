@@ -17,6 +17,10 @@
     <string name="actualizar">actualizar</string>
     <string name="consultar">consultar</string>
     <string name="mostrar">mostrar</string>
+    <string name="transaction_id">transaction_id</string>
+    <string name="amount">amount</string>
+    <string name="type">type</string>
+    <string name="comment">comment</string>
 
 
 </resources>

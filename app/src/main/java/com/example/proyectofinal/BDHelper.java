@@ -38,4 +38,19 @@ public class BDHelper extends SQLiteOpenHelper {
         return data;
     }
 
+    public Cursor getListContents2(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM "+EstructuraBD2.TABLE_NAME , null);
+        return data;
+    }
+
+    @Override
+    public void onOpen(SQLiteDatabase db) {
+        super.onOpen(db);
+        if (!db.isReadOnly()) {
+            // Enable foreign key constraints
+            db.execSQL("PRAGMA foreign_keys=ON;");
+        }
+    }
+
 }
