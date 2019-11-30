@@ -26,7 +26,7 @@ public class EstructuraBD2 {
                     EstructuraBD2.TYPE + " TEXT,"+
                     EstructuraBD2.COMMENT + " TEXT, "+
                     "FOREIGN KEY("+EstructuraBD2.USER_ID+") REFERENCES "+EstructuraBD.TABLE_NAME+
-                    "("+EstructuraBD.USER_ID+") ON DELETE CASCADE)";
+                    "("+EstructuraBD2.USER_ID+"))";
 
 
 

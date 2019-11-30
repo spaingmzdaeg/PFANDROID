@@ -59,7 +59,7 @@ public class activityUserTransaction extends AppCompatActivity {
 
 
 // Insert the new row, returning the primary key value of the new row
-                long newRowId = db.insert(EstructuraBD.TABLE_NAME, null, values);
+                long newRowId = db.insert(EstructuraBD2.TABLE_NAME, null, values);
                 Toast.makeText(getApplicationContext(),"Se Guardo el registro con clave" +
                         newRowId,Toast.LENGTH_LONG).show();
 
@@ -73,11 +73,11 @@ public class activityUserTransaction extends AppCompatActivity {
                 SQLiteDatabase db = Helper.getWritableDatabase();
 
                 // Define 'where' part of query.
-                String selection = EstructuraBD.USER_ID + " LIKE ?";
+                String selection = EstructuraBD2.TRANSACTION_ID + " LIKE ?";
 // Specify arguments in placeholder order.
                 String[] selectionArgs = { user_id.getText().toString() };
 // Issue SQL statement.
-                int deletedRows = db.delete(EstructuraBD.TABLE_NAME, selection, selectionArgs);
+                int deletedRows = db.delete(EstructuraBD2.TABLE_NAME, selection, selectionArgs);
 
                 Toast.makeText(getApplicationContext(),"Registro Eliminado",Toast.LENGTH_LONG).show();
 
@@ -111,11 +111,11 @@ public class activityUserTransaction extends AppCompatActivity {
 
 
 // Which row to update, based on the title
-                String selection = EstructuraBD.USER_ID + " LIKE ?";
-                String[] selectionArgs = { user_id.getText().toString() };
+                String selection = EstructuraBD2.TRANSACTION_ID + " LIKE ?";
+                String[] selectionArgs = { transaction_id.getText().toString() };
 
                 int count = db.update(
-                        EstructuraBD.TABLE_NAME,
+                        EstructuraBD2.TABLE_NAME,
                         values,
                         selection,
                         selectionArgs);
